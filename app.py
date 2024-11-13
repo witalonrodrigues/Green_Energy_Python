@@ -1,3 +1,6 @@
+import datetime
+import matplotlib.pyplot as plt
+
 #Dicionário com as emissões de carbono (kg CO2) por kWh de cada energia
 fatores_emissao = {
     'solar': 0.6,
