@@ -12,22 +12,22 @@ pip install matplotlib
 
 2. **Executando o Programa**
 
-    1. Clone este repositório:
-    ```
-    git clone https://github.com/seu_usuario/green_energy_python.git
-    ```
+1. Clone este repositório:
+```
+git clone https://github.com/seu_usuario/green_energy_python.git
+```
 
-    2. Navegue até a pasta do projeto:
-    ```
-    cd green_energy_python
-    ```
+2. Navegue até a pasta do projeto:
+```
+cd green_energy_python
+```
 
-    3. Execute o script:
-    ```
-    python app.py
-    ```
+3. Execute o script:
+```
+python app.py
+```
 
-    O programa irá iniciar com um menu interativo onde você pode:
+O programa irá iniciar com um menu interativo onde você pode:
     - Cadastrar Usuário
     - Consultar pacotes de energia.
     - Simular consumo e geração.
