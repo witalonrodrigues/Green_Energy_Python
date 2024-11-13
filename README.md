@@ -32,7 +32,7 @@ O programa irá iniciar com um menu interativo onde você pode:
     - Consultar pacotes de energia.
     - Simular consumo e geração.
     - Gerar relatórios de consumo e emissão de carbono.
-    - Exibir gráficos de consumo e geração.
+    - Exibir gráficos de consumo
 
 ## Funcionalidades
 
@@ -45,8 +45,8 @@ Simula o consumo diário de energia para um mês, calculando também a geração
 ### Relatório de Emissões de Carbono
 Exibe um relatório com os totais de consumo, geração e emissão de carbono evitada para o período registrado.
 
-### Gráficos de Consumo e Geração
-Exibe gráficos diários de consumo e geração de energia, permitindo visualizar o comportamento do consumo e da geração ao longo do mês.
+### Gráficos de Consumo
+Exibe gráficos diários de consumo de energia, permitindo visualizar o comportamento do consumo e da geração ao longo do mês.
 
 ## Estrutura do Código
 - `cadastrar_usuario()`: Registra o usuário no sistema.
