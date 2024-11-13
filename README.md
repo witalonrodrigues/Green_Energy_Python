@@ -12,17 +12,17 @@ pip install matplotlib
 
 2. **Executando o Programa**
 
-1. Clone este repositório:
+- Clone este repositório:
 ```
 git clone https://github.com/seu_usuario/green_energy_python.git
 ```
 
-2. Navegue até a pasta do projeto:
+- Navegue até a pasta do projeto:
 ```
 cd green_energy_python
 ```
 
-3. Execute o script:
+- Execute o script:
 ```
 python app.py
 ```
