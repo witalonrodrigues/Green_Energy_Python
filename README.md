@@ -5,9 +5,10 @@ Energy Green (EaaS) é uma aplicação em Python que fornece uma solução de **
 
 
 1. **Requisitos**
-    - Biblioteca `matplotlib` para gráficos:
-      pip install matplotlib
-      ```
+A aplicação utiliza a biblioteca `matplotlib` para gerar gráficos de consumo. Para instalar, utilize o seguinte comando:
+
+```bash
+pip install matplotlib
 
 2. **Executando o Programa**
 
