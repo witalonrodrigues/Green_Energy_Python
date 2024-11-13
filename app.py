@@ -101,6 +101,22 @@ def registrar_dados_usuario():
     historico.append(registro)
     print("Dados registrados com sucesso!\n")
 
+#Função para gerar um relatório mensal do consumo e emissão de carbono evitada com base no histórico
+def gerar_relatorio():
+    if not historico:
+        print("Nenhum dado registrado ainda para gerar o relatório.")
+        return
+    consumo_total = 0
+    emissao_total = 0
+    for registro in historico:
+        consumo_total += registro['consumo']
+    for registro in historico:
+        emissao_total += registro['emissao_carbono']
+
+    print('Relatório Mensal Energy Green')
+    print(f'Consumo Total: {consumo_total:.2f}')
+    print(f'Emissão de carbono evitada: {emissao_total:.2f} kg CO2')
+
 #Função Principal
 def main():
     cadastrar_usuario()
