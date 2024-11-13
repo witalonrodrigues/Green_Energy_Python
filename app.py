@@ -58,6 +58,21 @@ def consultar_pacote():
     print(f'Consumo Mensal: {consumo} kWh')
     print(f'Custo total do pacote: R${total_pacote:.2f}')
 
+#Função para simular o consumo de energia mensal
+def simular_consumo():
+    tipo_energia = input('Escolha qual energia deseja ver:\nSolar, Eólica ou Biomassa ').lower()
+    while not tipo_energia in ['solar', 'eólica', 'biomassa']:
+        print('Escolha inválida. Digite Solar, Eólica ou Biomassa. ')
+        tipo_energia = input('Escolha qual energia deseja ver:\nSolar, Eólica ou Biomassa ').lower()
+    uso_energia = float(input("Digite o uso médio diário de energia em kWh \nex: 15.0): "))
+    dias = 30
+    for dia in range(dias):
+        data = datetime.datetime.now() + datetime.timedelta(days=dia)
+        emissao_carbono = calcular_emissao(uso_energia, tipo_energia)
+
+    print(f'Seu consumo mensal será: {uso_energia * dias:.2f} kWh')
+    print(f'Você evitará {emissao_carbono:.2f} kg C02')
+
 #Função Principal
 def main():
     cadastrar_usuario()
