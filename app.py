@@ -1,3 +1,15 @@
+#Dicionário com as emissões de carbono (kg CO2) por kWh de cada energia
+fatores_emissao = {
+    'solar': 0.6,
+    'eólica': 0.8,
+    'biomassa': 0.4
+}
+#Lista para histórico de registros do usuário
+historico = []
+
+#Dicionário com os dados do usuario
+usuario = {}
+
 def cadastrar_usuario():
     print("\nCadastro de Usuário")
     usuario['nome'] = input("Digite seu nome: ").strip()
