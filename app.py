@@ -117,6 +117,21 @@ def gerar_relatorio():
     print(f'Consumo Total: {consumo_total:.2f}')
     print(f'Emissão de carbono evitada: {emissao_total:.2f} kg CO2')
 
+#Função para exibir os relatórios em forma de gráfico
+def graficos_consumo():
+    
+
+    datas = [registro["data"] for registro in historico]
+    consumo = [registro["consumo"] for registro in historico]
+    
+    plt.figure(figsize=(10, 5))
+    plt.plot(datas, consumo, label="Consumo (kWh)", color="blue")
+    plt.xlabel("Data")
+    plt.ylabel("Energia (kWh)")
+    plt.title("Consumo Diário")
+    plt.show()
+
+
 #Função Principal
 def main():
     cadastrar_usuario()
