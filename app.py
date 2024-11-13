@@ -73,6 +73,34 @@ def simular_consumo():
     print(f'Seu consumo mensal será: {uso_energia * dias:.2f} kWh')
     print(f'Você evitará {emissao_carbono:.2f} kg C02')
 
+#Calculando o total de emissão de carbono evitada
+def calcular_emissao(consumo, tipo_energia):
+    emissao_carbono = consumo * fatores_emissao[tipo_energia]
+    return emissao_carbono
+    
+#Função para fazer o registro diário do consumo, para registro no histórico
+def registrar_dados_usuario():
+    print("\n--- Registrar dados de energia ---")
+    consumo = input("Digite o consumo de energia do dia (kWh): ")
+    consumo = num_inteiro(consumo)
+    print("Escolha o tipo de energia:")
+    print("Solar")
+    print("Eólica")
+    print("Biomassa")
+    tipo_energia = input('').lower()
+    while not tipo_energia in ['solar', 'eólica', 'biomassa']:
+        print('Escolha inválida. Digite Solar, Eólica ou Biomassa. ')
+        tipo_energia = input('Qual a energia? \nSolar, Eólica ou Biomassa ').lower()
+    emissao_carbono = calcular_emissao(consumo, tipo_energia)
+    data = datetime.datetime.now()
+    registro = {
+    "data": data.strftime("%Y-%m-%d"),
+    "consumo": consumo,
+    "emissao_carbono": emissao_carbono
+    }
+    historico.append(registro)
+    print("Dados registrados com sucesso!\n")
+
 #Função Principal
 def main():
     cadastrar_usuario()
