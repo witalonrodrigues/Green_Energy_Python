@@ -1,3 +1,10 @@
+def cadastrar_usuario():
+    print("\nCadastro de Usuário")
+    usuario['nome'] = input("Digite seu nome: ").strip()
+    usuario['email'] = input("Digite seu email: ").strip()
+    usuario['telefone'] = input("Digite seu telefone: ").strip()
+    print(f"Usuário {usuario['nome']} cadastrado com sucesso!")
+
 #Função Principal
 def main():
     cadastrar_usuario()
