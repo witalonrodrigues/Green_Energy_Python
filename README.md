@@ -1,5 +1,9 @@
 # Green Energy Python - Energy as a Service (EaaS)
 
+## Integrantes
+Witalon Antonio Rodrigues - 559023
+Davis Cardoso de Lima Junior - 560723
+
 ## Descrição
 Energy Green (EaaS) é uma aplicação em Python que fornece uma solução de **Energy as a Service (EaaS)**, facilitando o acesso a energia renovável e o gerenciamento eficiente do consumo. Esta plataforma permite que usuários acompanhem o consumo de energia, simulem pacotes de energia renovável e analisem as emissões de carbono evitadas, promovendo práticas de consumo mais sustentáveis e ajudando empresas a gerenciar seus custos e impacto ambiental.
 
