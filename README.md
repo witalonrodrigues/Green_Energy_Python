@@ -1,7 +1,7 @@
 # Green Energy Python - Energy as a Service (EaaS)
 
 ## Integrantes
-Witalon Antonio Rodrigues - 559023
+Witalon Antonio Rodrigues - 559023 |
 Davis Cardoso de Lima Junior - 560723
 
 ## Descrição
